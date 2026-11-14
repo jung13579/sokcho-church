@@ -68,6 +68,12 @@ nav ul { display: flex; gap: 4px 6px; list-style: none; margin: 0; padding: 0; f
 nav ul a { text-decoration: none; padding: 6px 12px; border-radius: 999px; display: inline-block; opacity: 0.88; }
 nav ul a:hover { opacity: 1; background: rgba(29,78,95,0.08); }
 nav ul a[aria-current="page"] { opacity: 1; background: rgba(29,78,95,0.14); font-weight: 700; }
+@media (max-width: 640px) {
+  nav ul { flex-wrap: nowrap; width: 100%; justify-content: space-between; gap: 0; font-size: clamp(0.78rem, 3.7vw, 0.95rem); overflow-x: auto; scrollbar-width: none; }
+  nav ul::-webkit-scrollbar { display: none; }
+  nav ul li { flex: none; }
+  nav ul a { padding: 7px clamp(4px, 1.6vw, 10px); white-space: nowrap; }
+}
 
 /* 홈 첫 화면: 속초 바다 사진 위에 어두운 막을 깔아 글씨를 읽기 쉽게 */
 header.top.is-home {
