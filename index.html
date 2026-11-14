@@ -65,11 +65,11 @@ nav .logo { font-family: var(--font-display); font-weight: 700; font-size: 1.2re
 nav .logo { display: inline-flex; align-items: center; gap: 10px; }
 footer .name { display: flex; align-items: center; gap: 10px; }
 nav ul { display: flex; gap: 4px 6px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; font-size: 0.95rem; }
-nav ul a { text-decoration: none; padding: 6px 12px; border-radius: 999px; display: inline-block; opacity: 0.88; }
-nav ul a:hover { opacity: 1; background: rgba(29,78,95,0.08); }
-nav ul a[aria-current="page"] { opacity: 1; background: rgba(29,78,95,0.14); font-weight: 700; }
+nav ul a { text-decoration: none; padding: 7px 14px; border-radius: 999px; display: inline-block; background: #efe4cf; color: #4a3b22; border: 1px solid #e2d3b6; opacity: 1; }
+nav ul a:hover { background: #e6d6b6; }
+nav ul a[aria-current="page"] { background: #d9c49b; border-color: #c8ad7a; font-weight: 700; }
 @media (max-width: 640px) {
-  nav ul { flex-wrap: nowrap; width: 100%; justify-content: space-between; gap: 0; font-size: clamp(0.68rem, 3.45vw, 0.95rem); overflow-x: auto; letter-spacing: -0.03em; scrollbar-width: none; }
+  nav ul { flex-wrap: nowrap; width: 100%; justify-content: space-between; gap: 2px; font-size: clamp(0.68rem, 3.45vw, 0.95rem); overflow-x: auto; letter-spacing: -0.03em; scrollbar-width: none; }
   nav ul::-webkit-scrollbar { display: none; }
   nav ul li { flex: none; }
   nav ul a { padding: 7px clamp(2px, 1.1vw, 10px); white-space: nowrap; }
